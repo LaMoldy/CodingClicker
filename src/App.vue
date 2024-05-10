@@ -3,7 +3,7 @@
     <TopBarContainer />
     <br />
     <br />
-    <img alt="Notepad icon" class="desktop-icon" src="./assets/sprites/starting_os/Notepad.svg" />
+    <img alt="Notepad icon" class="desktop-icon" id="notepad" src="./assets/sprites/starting_os/Notepad.svg" />
 
   </div>
 </template>
@@ -39,4 +39,12 @@ export default {
   width: 128px;
   height: 128px;
 }
+
+#notepad {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
 </style>
