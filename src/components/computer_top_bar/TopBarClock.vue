@@ -1,5 +1,5 @@
 <template>
-    <p>{{ time }}</p>
+    <p class="no-select">{{ time }}</p>
 </template>
 
 <script>

@@ -1,9 +1,9 @@
 <template id="app">
   <div>
     <TopBarContainer />
-    <br />
-    <br />
-    <img alt="Notepad icon" class="desktop-icon" id="notepad" src="./assets/sprites/starting_os/Notepad.svg" />
+    <br class="no-select" />
+    <br class="no-select" />
+    <img alt="Notepad icon" class="desktop-icon no-select" id="notepad" src="./assets/sprites/starting_os/Notepad.svg" />
 
   </div>
 </template>
@@ -20,6 +20,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   margin: 0;
   padding: 0;
@@ -38,6 +39,7 @@ export default {
 .desktop-icon {
   width: 128px;
   height: 128px;
+  cursor: pointer;
 }
 
 #notepad {
@@ -45,6 +47,14 @@ export default {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+.no-select {
+  user-select: none;
 }
 
 </style>
