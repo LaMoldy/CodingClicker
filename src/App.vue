@@ -1,26 +1,42 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template id="app">
+  <div>
+    <TopBarContainer />
+    <br />
+    <br />
+    <img alt="Notepad icon" class="desktop-icon" src="./assets/sprites/starting_os/Notepad.svg" />
+
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import TopBarContainer from './components/computer_top_bar/TopBarContainer.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    TopBarContainer,
   }
-}
+};
 </script>
 
 <style>
 #app {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.desktop-icon {
+  width: 128px;
+  height: 128px;
 }
 </style>

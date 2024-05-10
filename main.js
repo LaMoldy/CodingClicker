@@ -14,12 +14,13 @@ function createWindow() {
 
   window.loadURL(
     url.format({
-      pathname: path.join(__dirname, "../dist/index.html"),
+      pathname: path.join(__dirname, "./dist/index.html"),
       protocol: "file",
       slashes: true,
     })
   );
 
+  window.menuBarVisible = false;
   window.resizable = false;
 }
 
