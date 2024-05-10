@@ -1,15 +1,22 @@
 <template id="app">
   <div>
+    <TopBarContainer />
+    <br />
+    <br />
     <img alt="Notepad icon" class="desktop-icon" src="./assets/sprites/starting_os/Notepad.svg" />
+
   </div>
 </template>
 
 <script>
+import TopBarContainer from './components/computer_top_bar/TopBarContainer.vue';
+
 export default {
   name: 'App',
   components: {
+    TopBarContainer,
   }
-}
+};
 </script>
 
 <style>
